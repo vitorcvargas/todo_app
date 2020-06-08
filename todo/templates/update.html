@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block heading %}TODO{% endblock %}
+
+{% block body %}
+
+    <form method = "POST">
+        <input type = "search" placeholder = "{{ item.title }}" value = "{{ item.title }}" name = "title">
+        <input type = "hidden" value = "{{ item.completed }}" name = "completed">
+        <button type = "submit">update</button>
+    </form>
+    
+{% endblock %}
