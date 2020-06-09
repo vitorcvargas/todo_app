@@ -5,9 +5,10 @@
 {% block body %}
 
     <form method = "POST">
-        <input type = "search" placeholder = "{{ item.title }}" value = "{{ item.title }}" name = "title">
+        <input class = "update-form" type = "search" placeholder = "{{ item.title }}" value = "{{ item.title }}" name = "title">
         <input type = "hidden" value = "{{ item.completed }}" name = "completed">
         <button type = "submit">update</button>
     </form>
     
 {% endblock %}
+
